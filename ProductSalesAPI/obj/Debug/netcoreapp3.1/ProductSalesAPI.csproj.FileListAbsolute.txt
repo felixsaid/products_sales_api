@@ -47,8 +47,14 @@ E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\ru
 E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\obj\Debug\netcoreapp3.1\ProductSalesAPI.csproj.CoreCompileInputs.cache
-E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\obj\Debug\netcoreapp3.1\ProductSalesAPI.MvcApplicationPartsAssemblyInfo.cache
 E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\obj\Debug\netcoreapp3.1\ProductSalesAPI.dll
 E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\obj\Debug\netcoreapp3.1\ProductSalesAPI.pdb
 E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\obj\Debug\netcoreapp3.1\ProductSalesAPI.genruntimeconfig.cache
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\obj\Debug\netcoreapp3.1\ProductSalesAPI.csproj.CoreCompileInputs.cache
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\obj\Debug\netcoreapp3.1\ProductSalesAPI.MvcApplicationPartsAssemblyInfo.cs
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\obj\Debug\netcoreapp3.1\ProductSalesAPI.MvcApplicationPartsAssemblyInfo.cache

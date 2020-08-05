@@ -1,21 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text.Json.Serialization;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace ProductSalesAPI
+namespace ProductSalesAPI.DTO
 {
-    public partial class Product
+    public class ProductDTO
     {
+
+        public ProductDTO()
+        {
+
+        }
+
         public int ProductId { get; set; }
         public string ProductName { get; set; }
         public double? ProductPrice { get; set; }
         public int? CategoryId { get; set; }
         public int? QuantityInStock { get; set; }
         public int? RefillLevel { get; set; }
-        public int? UserId { get; set; }
         public DateTime? DateCreated { get; set; }
 
-        public virtual Category Category { get; set; }
-        public virtual User User { get; set; }
+        public CategoryDTO Category { get; set; }
+        public UserDTO User { get; set; }
     }
 }
