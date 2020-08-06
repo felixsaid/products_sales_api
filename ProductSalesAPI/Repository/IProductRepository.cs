@@ -12,6 +12,7 @@ namespace ProductSalesAPI.Repository
         public ProductDTO GetProductById(int id);
         public Product AddProduct(Product productItem);
         public Product UpdateProduct(int id, Product productItem);
-        public string DeteleteProduct(int id);
+        public int DeleteProduct(int id);
+        public List<ProductDTO> SearchProductByCategory(string categoryName);
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
 
-namespace ProductSalesAPI.Services
+namespace ProductSalesAPI.Wrappers
 {
 
     public class ProductResponse
@@ -14,6 +14,7 @@ namespace ProductSalesAPI.Services
         public bool error { get; set; }
         public string message { get; set; }
         public object data { get; set; }
+        public string content { get; set; }
 
     }
 }

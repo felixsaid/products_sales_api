@@ -1,8 +1,10 @@
-﻿using ProductSalesAPI.DTO;
+﻿using Microsoft.EntityFrameworkCore;
+using ProductSalesAPI.DTO;
 using ProductSalesAPI.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace ProductSalesAPI.DataManager
 {
@@ -81,9 +83,14 @@ namespace ProductSalesAPI.DataManager
         }
 
 
-        public string DeteleteProduct(int id)
+        public int DeleteProduct(int id)
         {
-            throw new NotImplementedException();
+
+            var _prod = _dbContext.Product.FirstOrDefault(a => a.ProductId == id);
+            _dbContext.Remove(id);
+            _dbContext.SaveChanges();
+
+            return id;
         }
 
 
@@ -92,5 +99,33 @@ namespace ProductSalesAPI.DataManager
             throw new NotImplementedException();
         }
 
+        public List<ProductDTO> SearchProductByCategory(string categoryName)
+        {
+            var product = (from b in _dbContext.Product
+                            .Where(a => a.Category.CategoryName.Contains(categoryName))
+                            select new ProductDTO()
+                            {
+                                ProductId = b.ProductId,
+                                ProductName = b.ProductName,
+                                ProductPrice = b.ProductPrice,
+                                QuantityInStock = b.QuantityInStock,
+                                RefillLevel = b.RefillLevel,
+                                CategoryId = b.CategoryId,
+                                DateCreated = b.DateCreated,
+                                Category = new CategoryDTO()
+                                {
+                                    CategoryName = b.Category.CategoryName,
+                                    CategoryActive = b.Category.CategoryActive
+                                },
+                                User = new UserDTO()
+                                {
+                                    UserId = b.User.UserId,
+                                    UserName = b.User.UserName,
+                                    UserEmail = b.User.UserEmail
+                                }
+                            }).ToList();
+
+            return product;
+        }
     }
 }
