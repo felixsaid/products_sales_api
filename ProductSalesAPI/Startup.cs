@@ -33,6 +33,7 @@ namespace ProductSalesAPI
             services.AddMvc();
             services.AddControllers();
             services.AddTransient<IProductRepository, ProductDataManager>();
+            services.AddTransient<IOrderRepository, OrderDataManager>();
             services.AddDbContext<ProductAPIDbContext>
                 (op => op.UseSqlServer(Configuration.GetConnectionString("Database")));
 

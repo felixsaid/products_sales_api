@@ -73,14 +73,7 @@ namespace ProductSalesAPI.Controllers
             productDTO.ProductPrice = product.ProductPrice;
             productDTO.DateCreated = product.DateCreated;
 
-            ProductResponse response = new ProductResponse();
-
-            response.error = false;
-            response.message = "success";
-            response.data = productDTO;
-            response.content = "new product created";
-
-            return Ok(response);
+            return Ok(new Response<ProductCreateDTO>(productDTO));
         }
 
         [HttpDelete]
@@ -103,13 +96,7 @@ namespace ProductSalesAPI.Controllers
                 return NotFound();
             }
 
-            ProductResponse response = new ProductResponse();
-            response.error = false;
-            response.message = "success";
-            response.data = prod;
-            response.content = "product searched with category " + categoryName;
-
-            return Ok(response);
+            return Ok(new Response<List<ProductDTO>>(prod));
         }
     }
 }
