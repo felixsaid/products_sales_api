@@ -55,6 +55,13 @@ E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Sw
 E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\obj\Debug\netcoreapp3.1\ProductSalesAPI.csproj.CoreCompileInputs.cache
 E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\obj\Debug\netcoreapp3.1\ProductSalesAPI.MvcApplicationPartsAssemblyInfo.cs
 E:\.NET Core\Projects\ProductSalesAPI\ProductSalesAPI\obj\Debug\netcoreapp3.1\ProductSalesAPI.MvcApplicationPartsAssemblyInfo.cache

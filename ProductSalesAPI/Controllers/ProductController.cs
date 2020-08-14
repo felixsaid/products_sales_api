@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ProductSalesAPI.DTO;
 using ProductSalesAPI.Filter;
@@ -8,9 +10,11 @@ using ProductSalesAPI.Services;
 using ProductSalesAPI.Wrappers;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 
 namespace ProductSalesAPI.Controllers
 {
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("v1/api/products")]
     [ApiController]
     public class ProductController : ControllerBase
@@ -42,7 +46,10 @@ namespace ProductSalesAPI.Controllers
             var totalRecords = _productRepository.GetAllProducts().Count();
             var pagedReponse = PaginationHelper.CreatePagedReponse<ProductDTO>(pagedData, validFilter, totalRecords, uriService, route);
 
+            
             return Ok(pagedReponse);
+       
+            
 
             //return Ok(new PagedResponse<List<ProductDTO>>(pagedData, validFilter.PageNumber, validFilter.PageSize));
         }
@@ -55,7 +62,13 @@ namespace ProductSalesAPI.Controllers
 
             if (_product == null)
             {
-                return NotFound();
+                ErrorResponse error = new ErrorResponse();
+
+                error.error = true;
+                error.content = "Not Found";
+                error.message = "No product with id: " + id + " was found.";
+
+                return NotFound(error);
             }
 
             return Ok(new Response<ProductDTO>(_product));
